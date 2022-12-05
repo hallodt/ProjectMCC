@@ -33,17 +33,17 @@ namespace WebAPI.Migrations
                     b.Property<int>("AngsuranKe")
                         .HasColumnType("int");
 
-                    b.Property<int>("BesarAngsuran")
-                        .HasColumnType("int");
+                    b.Property<double>("BesarAngsuran")
+                        .HasColumnType("float");
 
-                    b.Property<int>("Denda")
-                        .HasColumnType("int");
+                    b.Property<double>("Denda")
+                        .HasColumnType("float");
 
                     b.Property<int>("IdPinjaman")
                         .HasColumnType("int");
 
-                    b.Property<int>("SisaPinjaman")
-                        .HasColumnType("int");
+                    b.Property<double>("SisaPinjaman")
+                        .HasColumnType("float");
 
                     b.Property<DateTime>("TglEntry")
                         .HasColumnType("datetime2");
@@ -151,6 +151,9 @@ namespace WebAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPengajuan"), 1L, 1);
 
+                    b.Property<double>("BesarAngsuran")
+                        .HasColumnType("float");
+
                     b.Property<int>("BesarPinjaman")
                         .HasColumnType("int");
 
@@ -208,6 +211,10 @@ namespace WebAPI.Migrations
                     b.Property<double>("SisaPinjaman")
                         .HasColumnType("float");
 
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("TglEntry")
                         .HasColumnType("datetime2");
 
@@ -215,10 +222,6 @@ namespace WebAPI.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("UserEntry")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("status")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

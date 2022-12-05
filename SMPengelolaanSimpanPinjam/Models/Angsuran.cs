@@ -11,9 +11,9 @@ namespace WebAPI.Models
         [ForeignKey("Pinjaman")]
         public int IdPinjaman { get; set; }
         public int AngsuranKe { get; set; }
-        public int BesarAngsuran { get; set; }
-        public int Denda { get; set; }
-        public int SisaPinjaman { get; set; }
+        public double BesarAngsuran { get; set; }
+        public double Denda { get; set; }
+        public double SisaPinjaman { get; set; }
         public string UserEntry { get; set; }
         public DateTime TglEntry { get; set; }
 

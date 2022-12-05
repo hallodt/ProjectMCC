@@ -20,7 +20,7 @@ namespace WebAPI.Models
         public string UserEntry { get; set; }
         public DateTime TglEntry { get; set; }
         public DateTime TglTempo { get; set; }
-        public string status { get; set; }
+        public string Status { get; set; }
         [JsonIgnore]
         public User? User { get; set; }
         [JsonIgnore]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "A+vBvXQ7gchEI9U+YYlTV4+ol9Uyf8dKkODnXiuly8U=",
+  "Hash": "Kq+BzLpaJEsGQ2WzJpzIRwleZg2YP5uL25MbLFAUzZg=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\Faris\\source\\repos\\SMPengelolaanSimpanPinjam-main\\WebApp\\wwwroot\\js\\Tabungan.js",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Faris\\source\\repos\\SMPengelolaanSimpanPinjam-main\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "js/Tabungan.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Tabungan.js"
     },
     {
       "Identity": "C:\\Users\\Faris\\source\\repos\\SMPengelolaanSimpanPinjam-main\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

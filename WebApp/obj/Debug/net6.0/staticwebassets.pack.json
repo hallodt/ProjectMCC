@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\js\\DataPengaturan.js"
     },
     {
+      "Id": "C:\\Users\\Faris\\source\\repos\\SMPengelolaanSimpanPinjam-main\\WebApp\\wwwroot\\js\\Tabungan.js",
+      "PackagePath": "staticwebassets\\js\\Tabungan.js"
+    },
+    {
       "Id": "C:\\Users\\Faris\\source\\repos\\SMPengelolaanSimpanPinjam-main\\WebApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

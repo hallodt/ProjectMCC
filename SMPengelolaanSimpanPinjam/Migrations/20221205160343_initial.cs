@@ -101,6 +101,7 @@ namespace WebAPI.Migrations
                     IdUser = table.Column<int>(type: "int", nullable: false),
                     IdJenisPinjaman = table.Column<int>(type: "int", nullable: false),
                     BesarPinjaman = table.Column<int>(type: "int", nullable: false),
+                    BesarAngsuran = table.Column<double>(type: "float", nullable: false),
                     TglAcc = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Status = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
@@ -137,7 +138,7 @@ namespace WebAPI.Migrations
                     UserEntry = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TglEntry = table.Column<DateTime>(type: "datetime2", nullable: false),
                     TglTempo = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    status = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -215,9 +216,9 @@ namespace WebAPI.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IdPinjaman = table.Column<int>(type: "int", nullable: false),
                     AngsuranKe = table.Column<int>(type: "int", nullable: false),
-                    BesarAngsuran = table.Column<int>(type: "int", nullable: false),
-                    Denda = table.Column<int>(type: "int", nullable: false),
-                    SisaPinjaman = table.Column<int>(type: "int", nullable: false),
+                    BesarAngsuran = table.Column<double>(type: "float", nullable: false),
+                    Denda = table.Column<double>(type: "float", nullable: false),
+                    SisaPinjaman = table.Column<double>(type: "float", nullable: false),
                     UserEntry = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TglEntry = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
