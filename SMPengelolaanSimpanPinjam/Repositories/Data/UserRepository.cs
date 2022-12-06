@@ -73,10 +73,63 @@ namespace WebAPI.Repositories.Data
             return 0;
         }
 
+        public int GantiDataAnggota(User user)
+        {
+            var data = _context.Users.Find(user.IdUser);
+            user.Password = data.Password;
+            if (data != null)
+            {
+                _context.Entry(user).State = EntityState.Modified;
+                var result = _context.SaveChanges();
+                return result;
+            }
+            return 0;
+        }
+
         public IEnumerable<User> GetAnggota()
         {
             return _context.Users.Where(user => user.IdRole == 3).ToList();
         }
+
+        public IEnumerable<User> GetAdminandPetugas()
+        {
+            return _context.Users.Where(user => user.IdRole == 2 || user.IdRole == 3).ToList();
+        }
+
+        public int ChangeRole(int userId, int idRole)
+        {
+            var data = _context.Users.Find(userId);
+            string nomorBaru = data.NomorAnggota;
+
+            if (idRole == 1)
+            {
+                data.IdRole = 1;
+                nomorBaru = 'U' + nomorBaru.Substring(7);
+                data.NomorAnggota = nomorBaru;
+                _context.Entry(data).State = EntityState.Modified;
+                var result = _context.SaveChanges();
+                return result;
+            }
+            else if (idRole == 2)
+            {
+                data.IdRole = 2;
+                nomorBaru = 'P' + nomorBaru.Substring(7);
+                data.NomorAnggota = nomorBaru;
+                _context.Entry(data).State = EntityState.Modified;
+                var result = _context.SaveChanges();
+                return result;
+            }
+            else
+            {
+                data.IdRole = 1;
+                nomorBaru = 'A' + nomorBaru.Substring(7);
+                data.NomorAnggota = nomorBaru;
+                _context.Entry(data).State = EntityState.Modified;
+                var result = _context.SaveChanges();
+                return result;
+            }
+        }
+
         public IEnumerable<User> GetAnggotaAktif()
         {
             return _context.Users.Where(user => user.IdRole == 3 && user.Status == "Aktif").ToList();
@@ -85,6 +138,7 @@ namespace WebAPI.Repositories.Data
         public int TambahAnggota(User user)
         {
             user.Status = "Aktif";
+            user.IdRole = 3;
             var data = _context.Users.OrderByDescending(user => user.IdUser).FirstOrDefault(x => x.IdRole.Equals(3));
             if(data == null)
             {
@@ -99,7 +153,7 @@ namespace WebAPI.Repositories.Data
                 string nomorAnggotaBaru = data.NomorAnggota;
                 nomorAnggotaBaru = nomorAnggotaBaru.Substring(7);
                 int nomorAnggota = 1 + Int32.Parse(nomorAnggotaBaru);
-                user.NomorAnggota = 'A' + user.TglLahir.Month.ToString() + user.TglLahir.Year.ToString() + nomorAnggota.ToString("D3");
+                user.NomorAnggota = 'A' + user.TglLahir.Month.ToString("D3") + user.TglLahir.Year.ToString() + nomorAnggota.ToString("D3");
                 user.Password = user.NomorAnggota; //DefaultPassword
                 _context.Users.Add(user);
                 var result = _context.SaveChanges();
