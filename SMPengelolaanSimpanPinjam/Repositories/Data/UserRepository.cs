@@ -142,7 +142,7 @@ namespace WebAPI.Repositories.Data
             var data = _context.Users.OrderByDescending(user => user.IdUser).FirstOrDefault(x => x.IdRole.Equals(3));
             if(data == null)
             {
-                user.NomorAnggota = 'A' + user.TglLahir.Month.ToString() + user.TglLahir.Year.ToString() + "001";
+                user.NomorAnggota = 'A' + user.TglLahir.Month.ToString("D2") + user.TglLahir.Year.ToString() + "001";
                 user.Password = user.NomorAnggota; //DefaultPassword
                 _context.Users.Add(user);
                 var result = _context.SaveChanges();
@@ -151,9 +151,9 @@ namespace WebAPI.Repositories.Data
             else
             {
                 string nomorAnggotaBaru = data.NomorAnggota;
-                nomorAnggotaBaru = nomorAnggotaBaru.Substring(7);
+                nomorAnggotaBaru = nomorAnggotaBaru.Substring(6);
                 int nomorAnggota = 1 + Int32.Parse(nomorAnggotaBaru);
-                user.NomorAnggota = 'A' + user.TglLahir.Month.ToString("D3") + user.TglLahir.Year.ToString() + nomorAnggota.ToString("D3");
+                user.NomorAnggota = 'A' + user.TglLahir.Month.ToString("D2") + user.TglLahir.Year.ToString() + nomorAnggota.ToString("D3");
                 user.Password = user.NomorAnggota; //DefaultPassword
                 _context.Users.Add(user);
                 var result = _context.SaveChanges();
