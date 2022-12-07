@@ -93,7 +93,6 @@ function addAnggota() {
     let status = "";
     let u_entry = $('#u_entry').val();
     let tgl_entry = new Date($('#tgl_entry').val()).toJSON();
-
     data = {
         "idUser": id,
         "nomorAnggota": nomor_anggota,
@@ -114,6 +113,7 @@ function addAnggota() {
         "tglEntry": tgl_entry
     };
 
+    console.log(data);
     $.ajax({
         url: `https://localhost:7189/api/User`,
         type: 'POST',
@@ -126,6 +126,7 @@ function addAnggota() {
             Swal.fire({
                 icon: 'success',
                 title: 'Data Berhasil Ditambahkan',
+                text: 'Berhasil menambahkan data anggota.',
                 showConfirmButton: false,
                 timer: 1500
             });
