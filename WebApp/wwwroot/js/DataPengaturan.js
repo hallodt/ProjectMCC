@@ -249,6 +249,8 @@ function saveEditJenisPinjaman(idJenisPinjaman) {
         "tglEntry": tgl_entry
 
     };
+
+    console.log(res);
     $.ajax({
         url: `https://localhost:7189/api/JenisPinjaman`,
         type: "PUT",
@@ -269,6 +271,48 @@ function saveEditJenisPinjaman(idJenisPinjaman) {
         },
         error: function () {
 
+        }
+    });
+}
+
+function addJenisPinjaman() {
+    let id = 0;
+    let jenis_pinjaman = $('#jenis_pinjaman').val();
+    let lama = $('#lama_angsuran4').val();
+    let maks = parseInt($('#maks_pinjaman4').val());;
+    let bunga = parseFloat($('#bunga4').val());
+    let u_entry = $('#u_entry4').val();
+    let tgl_entry = new Date($('#tgl_entry4').val()).toISOString();
+
+    data = {
+        "idJenisPinjaman": id,
+        "namaPinjaman": jenis_pinjaman,
+        "lamaAngsuran": lama,
+        "maksPinjaman": maks,
+        "bunga": bunga,
+        "userEntry": u_entry,
+        "tglEntry": tgl_entry
+    };
+
+    $.ajax({
+        url: `https://localhost:7189/api/JenisPinjaman`,
+        type: 'POST',
+        data: JSON.stringify(data),
+        dataType: 'json',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        success: function () {
+            Swal.fire({
+                icon: 'success',
+                title: 'Data Berhasil Ditambahkan',
+                text: 'Berhasil menambahkan data jenis pinjaman.',
+                showConfirmButton: false,
+                timer: 1500
+            });
+            setTimeout(function () {
+                location.reload();
+            }, 1500);
         }
     });
 }

@@ -4,6 +4,7 @@
 
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
 	<h1 class="h3 mb-0 text-gray-800"><i class="fas fa-fw fa-cogs"></i> Data Jenis Pinjaman</h1>
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal"> <i class="fa fa-plus"></i> Tambah Data </button>
 </div>
 
 <div class="card shadow mb-4">
@@ -36,6 +37,61 @@
 </div>
 
 <!--   Modals   -->
+<!--   Modal (Add Data Data)  -->
+<div class="modal fade" id="addModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="m-0 text-primary" id="exampleModalLabel"><i class="fas fa-fw fa-plus"></i> Tambah Data Jenis Pinjaman</h5>
+			</div>
+			<div class="modal-body">
+
+				<div class="row">
+@*					<div class="form-group col-md-6">
+						<label class="font-weight-bold">Kode Pinjaman</label>
+						<input autocomplete="off" type="text" name="kode_jenis_pinjaman" readonly required class="form-control" />
+					</div>*@
+
+					<div class="form-group col-md-6">
+						<label class="font-weight-bold">Jenis Pinjaman</label>
+						<input autocomplete="off" type="text" id="jenis_pinjaman" required class="form-control" />
+					</div>
+
+					<div class="form-group col-md-6">
+						<label class="font-weight-bold">Lama Angsuran (Bulan)</label>
+						<input autocomplete="off" type="text" id="lama_angsuran4" required class="form-control" />
+					</div>
+
+					<div class="form-group col-md-6">
+						<label class="font-weight-bold">Maksimal Pinjaman</label>
+						<input autocomplete="off" type="text" id="maks_pinjaman4" required class="form-control" />
+					</div>
+
+					<div class="form-group col-md-6">
+						<label class="font-weight-bold">Bunga (%)</label>
+						<input autocomplete="off" type="text" id="bunga4" required class="form-control" />
+					</div>
+
+					<div class="form-group col-md-6">
+						<label class="font-weight-bold">User Entri</label>
+						<input autocomplete="off" type="text" id="u_entry4" value="Admin" readonly required class="form-control" />
+					</div>
+
+					<div class="form-group col-md-6">
+						<label class="font-weight-bold">Tanggal Entri</label>
+						<input autocomplete="off" id="tgl_entry4" value="@DateTime.Now.ToString("MM/dd/yyyy")" type="datetime" readonly req uired class="form-control" />
+					</div>
+				</div>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" onclick="addJenisPinjaman()"><i class="fa fa-save"></i> Simpan</button>
+				<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+			</div>
+		</div>
+	</div>
+</div>
+
 <!--   Modal (Edit Data)  -->
 
 <div class="modal fade" id="editModalPinjaman" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

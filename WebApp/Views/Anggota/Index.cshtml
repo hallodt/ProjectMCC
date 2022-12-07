@@ -117,12 +117,12 @@
 
 				<div class="form-group col-md-6">
 					<label class="font-weight-bold">Tanggal Masuk</label>
-					<input autocomplete="off" id="tgl_masuk" value="@DateTime.Now" type="datetime" readonly required class="form-control" />
+						<input autocomplete="off" id="tgl_masuk" value="@DateTime.Now.ToString("MM/dd/yyyy")" type="datetime" readonly required class="form-control" />
 				</div>
 				
 				<div class="form-group col-md-6">
 					<label class="font-weight-bold">Tanggal Entri</label>
-					<input autocomplete="off" id="tgl_entry" value="@DateTime.Now" type="datetime" readonly req uired class="form-control" />
+						<input autocomplete="off" id="tgl_entry" value="@DateTime.Now.ToString("MM/dd/yyyy")" type="datetime" readonly req uired class="form-control" />
 				</div>
 			
 			</div>
