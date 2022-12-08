@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JCcutpR+jdh5qIV4spGv68r9vv1fD8FLQgUrN5LO0M0=",
+  "Hash": "OrougggbMqLoUerambCaINJtaveUesKmV4sZZ9yiKr4=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -134,6 +134,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\DataPengaturan.js"
+    },
+    {
+      "Identity": "C:\\Users\\Faris\\source\\repos\\SMPengelolaanSimpanPinjam-main\\WebApp\\wwwroot\\js\\Data-Pengguna\\Pengguna.js",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Faris\\source\\repos\\SMPengelolaanSimpanPinjam-main\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "js/Data-Pengguna/Pengguna.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Data-Pengguna\\Pengguna.js"
+    },
+    {
+      "Identity": "C:\\Users\\Faris\\source\\repos\\SMPengelolaanSimpanPinjam-main\\WebApp\\wwwroot\\js\\Data-Pengguna\\User.js",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Faris\\source\\repos\\SMPengelolaanSimpanPinjam-main\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "js/Data-Pengguna/User.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Data-Pengguna\\User.js"
     },
     {
       "Identity": "C:\\Users\\Faris\\source\\repos\\SMPengelolaanSimpanPinjam-main\\WebApp\\wwwroot\\js\\PengajuanAnggota.js",

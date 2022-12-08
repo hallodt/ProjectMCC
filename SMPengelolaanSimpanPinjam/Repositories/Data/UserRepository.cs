@@ -98,7 +98,7 @@ namespace WebAPI.Repositories.Data
 
         public IEnumerable<User> GetAdminandPetugas()
         {
-            return _context.Users.Where(user => user.IdRole == 2 || user.IdRole == 3).ToList();
+            return _context.Users.Where(user => user.IdRole == 1 || user.IdRole == 2).ToList();
         }
 
         public int ChangeRole(int userId, int idRole)
