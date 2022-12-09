@@ -20,12 +20,6 @@
                     return data.nomorAnggota;
                 }
             },
-            //{
-            //    data: null,
-            //    render: function (data, type, row, meta) {
-            //        return data.idRole;
-            //    }
-            //},
             {
                 data: null,
                 render: function (data, type, row, meta) {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OrougggbMqLoUerambCaINJtaveUesKmV4sZZ9yiKr4=",
+  "Hash": "8orSAbL3R/1Ov+1Q2uhgkaOHBrqTPTLyG38EDY60nLA=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Anggota.js"
+    },
+    {
+      "Identity": "C:\\Users\\Faris\\source\\repos\\SMPengelolaanSimpanPinjam-main\\WebApp\\wwwroot\\js\\Data-Laporan\\LaporanAnggota.js",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Faris\\source\\repos\\SMPengelolaanSimpanPinjam-main\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "js/Data-Laporan/LaporanAnggota.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Data-Laporan\\LaporanAnggota.js"
     },
     {
       "Identity": "C:\\Users\\Faris\\source\\repos\\SMPengelolaanSimpanPinjam-main\\WebApp\\wwwroot\\js\\DataPengaturan.js",

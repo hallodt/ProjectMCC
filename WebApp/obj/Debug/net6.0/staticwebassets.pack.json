@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\js\\Anggota.js"
     },
     {
+      "Id": "C:\\Users\\Faris\\source\\repos\\SMPengelolaanSimpanPinjam-main\\WebApp\\wwwroot\\js\\Data-Laporan\\LaporanAnggota.js",
+      "PackagePath": "staticwebassets\\js\\Data-Laporan\\LaporanAnggota.js"
+    },
+    {
       "Id": "C:\\Users\\Faris\\source\\repos\\SMPengelolaanSimpanPinjam-main\\WebApp\\wwwroot\\js\\Data-Pengguna\\Pengguna.js",
       "PackagePath": "staticwebassets\\js\\Data-Pengguna\\Pengguna.js"
     },

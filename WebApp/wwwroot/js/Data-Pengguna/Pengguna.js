@@ -32,24 +32,24 @@
                 return data.userName;
             }
         },
-        //{
-        //    data: null,
-        //    "render": function (data, type, row, meta) {
-        //        if (row.data.nomorAnggota.substr(1) == 'U') {
-        //            return `
-        //            <span class='badge badge-success'>Admin</span>
-        //            `;
-        //        } else if (row.data.nomorAnggota.substr(1) == 'P') {
-        //            return `
-        //            <span class='badge badge-success'>Petugas</span>
-        //            `;
-        //        }
-        //    }
-        //},
         {
             data: null,
             render: function (data, type, row, meta) {
                 return data.nama;
+            }
+        },
+        {
+            data: null,
+            "render": function (data, type, row, meta) {
+                if (row.idRole == 1) {
+                    return `
+                    <span class='badge badge-dark'>Admin</span>
+                    `;
+                } else if (row.idRole == 2) {
+                    return `
+                    <span class='badge badge-dark'>Petugas</span>
+                    `;
+                }
             }
         },
         {

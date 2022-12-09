@@ -151,10 +151,7 @@
                 </a>
                 <div id="collapsePages1" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Data Anggota</a>
-                        <a class="collapse-item" href="#">Data Simpanan</a>
-                        <a class="collapse-item" href="#">Data Pinjaman</a>
-                        <a class="collapse-item" href="#">Data Perbulan</a>
+                        <a class="collapse-item" asp-controller="Laporan" asp-action="Index">Data Anggota</a>
                     </div>
                 </div>
             </li>
@@ -271,12 +268,13 @@
     <script src="~/lib/Sbadmin/js/sb-admin-2.min.js"></script>
 
     <!-- Datatables -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.1/b-2.3.3/b-colvis-2.3.3/b-html5-2.3.3/datatables.min.js"></script>
+ 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
     <script src="~/lib/Sbadmin/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.1/b-2.3.3/b-colvis-2.3.3/b-html5-2.3.3/datatables.min.js"></script>
     <script src="/lib/Sbadmin/vendor/datatables/dataTables.bootstrap4.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
     <script src="//cdn.datatables.net/plug-ins/1.10.11/sorting/datetime-moment.js"></script>
@@ -290,6 +288,7 @@
     <script src="~/js/Tabungan.js"></script>
     <script src="~/js/Data-Pengguna/Pengguna.js"></script>
     <script src="~/js/Data-Pengguna/User.js"></script>
+    <script src="~/js/Data-Laporan/LaporanAnggota.js"></script>
 </body>
 
 </html>
