@@ -19,9 +19,19 @@
             },
             { data: 'nomorAnggota', },
             { data: 'nama', },
-            { data: 'tglLahir', }, 
+            {
+                data: null,
+                render: function (data, type, row, meta) {
+                    return new Date(data.tglLahir).toISOString().substring(0, 10);
+                }
+            },
             { data: 'pekerjaan', },
-            { data: 'tglMasuk', },
+            {
+                data: null,
+                render: function (data, type, row, meta) {
+                    return new Date(data.tglMasuk).toISOString().substring(0, 10);
+                }
+            },
             {
                 data: 'status',
                 "render": function (data, type, row, meta) {
@@ -63,10 +73,10 @@
             //    render: $.fn.dataTable.render.moment('YYYY-MM-DDTHH:mm:ss.SSS', 'YYYY/MM/DD')
             //},
 
-            {
-                targets: [3,5],
-                render: $.fn.dataTable.render.moment('YYYY-MM-DDTHH:mm:ss', 'YYYY/MM/DD')
-            },
+            //{
+            //    targets: [3, 5],
+            //    render: $.fn.dataTable.render.moment('YYYY-MM-DDTHH:mm:ss', 'YYYY/MM/DD')
+            //},
             // Center align the header content of column 1
             { className: "dt-head-center", targets: "_all" }
             // Center align the body content of columns 2, 3, & 4
@@ -149,7 +159,6 @@ function editAnggota(idUser) {
             <input type="hidden" class="form-control" id="tgl_masuk1" value="${res.data.tglMasuk}" readonly>
             <input type="hidden" class="form-control" id="username_anggota1" value="${res.data.userName}" readonly>
             <input type="hidden" class="form-control" id="status1" value="${res.data.status}" readonly>
-            <input type="hidden" class="form-control" id="password1" value="${res.data.password}" readonly>
 
 				<div class="form-group col-md-6">
 					<label class="font-weight-bold">Nomor Anggota</label>
@@ -197,7 +206,7 @@ function editAnggota(idUser) {
 				
 				<div class="form-group col-md-6">
 					<label class="font-weight-bold">Tanggal Lahir</label>
-					<input autocomplete="off" type="date" id="tgl_lahir1" value="${new Date(res.data.tglLahir).toISOString().substring(0, 10) }" required class="form-control"/>
+					<input autocomplete="off" type="date" id="tgl_lahir1" value="${new Date(res.data.tglLahir).toISOString().substring(0, 10)}" required class="form-control"/>
 				</div>
 				
 				<div class="form-group col-md-6">
@@ -232,7 +241,7 @@ function saveEditAnggota(idUser) {
     var nama = $('#nama_anggota1').val();
     var email = $('#email_anggota1').val();
     var username = $('#username_anggota1').val();
-    var password = $('#password1').val();
+    var password = "a";
     var alamat = $('#alamat_anggota1').val();
     var jk = $('#jenis_kelamin1').val();
     var pekerjaan = $('#pekerjaan_anggota1').val();
@@ -265,7 +274,7 @@ function saveEditAnggota(idUser) {
         "status": status,
         "userEntry": u_entry,
         "tglEntry": tgl_entry
-       
+
     };
     $.ajax({
         url: `https://localhost:7189/api/User/GantiDataAnggota`,
@@ -324,6 +333,3 @@ function keluarAnggota(id) {
         }
     });
 }
-
-
-

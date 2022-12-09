@@ -21,7 +21,12 @@
             { data: 'namaSimpanan', },
             { data: 'besarSimpanan', },
             { data: 'userEntry', },
-            { data: 'tglEntry', },
+            {
+                data: null,
+                render: function (data, type, row, meta) {
+                    return new Date(data.tglEntry).toISOString().substring(0, 10);
+                }
+            },
             {
                 data: null,
                 "render": function (data, type, row, meta) {
@@ -34,11 +39,6 @@
         ],
         columnDefs: [
             { className: "dt-head-center", targets: "_all" },
-
-            {
-                targets: 4,
-                render: $.fn.dataTable.render.moment('YYYY-MM-DDTHH:mm:ss', 'YYYY/MM/DD')
-            },
         ]
     });
 
@@ -57,9 +57,19 @@
             { data: 'namaPinjaman', },
             { data: 'lamaAngsuran', },
             { data: 'maksPinjaman', },
-            { data: 'bunga', },
+            {
+                data: null,
+                render: function (data, type, row, meta) {
+                    return data.bunga * 100;
+                }
+            },
             { data: 'userEntry', },
-            { data: 'tglEntry', },
+            {
+                data: null,
+                render: function (data, type, row, meta) {
+                    return new Date(data.tglEntry).toISOString().substring(0, 10);
+                }
+            },
             {
                 data: null,
                 "render": function (data, type, row, meta) {
@@ -72,11 +82,6 @@
         ],
         columnDefs: [
             { className: "dt-head-center", targets: "_all" },
-
-            {
-                targets: 6,
-                render: $.fn.dataTable.render.moment('YYYY-MM-DDTHH:mm:ss', 'YYYY/MM/DD')
-            },
         ]
     });
 });
@@ -201,7 +206,7 @@ function editJenisPinjaman(idJenisPinjaman) {
 
 					<div class="form-group col-md-6">
 						<label class="font-weight-bold">Bunga (%)</label>
-						<input autocomplete="off" type="text" id="bunga" value="${res.data.bunga}" required class="form-control" />
+						<input autocomplete="off" type="text" id="bunga" value="${res.data.bunga * 100}" required class="form-control" />
 					</div>
 
 					<div class="form-group col-md-6">
@@ -232,8 +237,8 @@ function saveEditJenisPinjaman(idJenisPinjaman) {
     var Id = idJenisPinjaman;
     var nama_pinjaman = $('#nama_pinjaman').val();
     var lama = $('#lama_angsuran').val();
-    var maks = parseInt($('#maks_pinjaman').val());;
-    var bunga = parseFloat($('#bunga').val());
+    var maks = parseInt($('#maks_pinjaman').val());
+    let bunga = parseFloat($('#bunga').val()/100);
     var u_entry = $('#u_entry3').val();
     var tgl_entry = new Date($('#tgl_entry3').val()).toISOString();
 
@@ -280,7 +285,7 @@ function addJenisPinjaman() {
     let jenis_pinjaman = $('#jenis_pinjaman').val();
     let lama = $('#lama_angsuran4').val();
     let maks = parseInt($('#maks_pinjaman4').val());;
-    let bunga = parseFloat($('#bunga4').val());
+    let bunga = parseFloat($('#bunga4').val()/100);
     let u_entry = $('#u_entry4').val();
     let tgl_entry = new Date($('#tgl_entry4').val()).toISOString();
 

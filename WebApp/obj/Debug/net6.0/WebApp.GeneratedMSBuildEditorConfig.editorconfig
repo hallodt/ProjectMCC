@@ -20,12 +20,28 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5nZ290YVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Anggota/Pengajuan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5nZ290YVxQZW5nYWp1YW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Anggota/TambahPengajuan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5nZ290YVxUYW1iYWhQZW5nYWp1YW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/DataAnggota/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YUFuZ2dvdGFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Home/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RGb3VuZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/JenisPinjaman/Index.cshtml]
@@ -42,10 +58,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Pengajuan/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVuZ2FqdWFuXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Pengajuan/PengajuanAnggota.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVuZ2FqdWFuXFBlbmdhanVhbkFuZ2dvdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Pengguna/DataUser.cshtml]
@@ -82,6 +94,34 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Tabungan/Penarikan.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFidW5nYW5cUGVuYXJpa2FuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Transaksi/BayarAngsuran.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3NpXEJheWFyQW5nc3VyYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Transaksi/DetailPinjaman.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3NpXERldGFpbFBpbmphbWFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Transaksi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3NpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Transaksi/Pinjaman.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3NpXFBpbmphbWFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Transaksi/Simpanan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3NpXFNpbXBhbmFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Transaksi/TambahPinjaman.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3NpXFRhbWJhaFBpbmphbWFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/Transaksi/TambahSimpanan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3NpXFRhbWJhaFNpbXBhbmFuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Faris/source/repos/SMPengelolaanSimpanPinjam-main/WebApp/Views/_ViewImports.cshtml]

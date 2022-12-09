@@ -32,7 +32,7 @@
             {
                 data: null,
                 render: function (data, type, row, meta) {
-                    return data.tglLahir;
+                    return new Date(data.tglLahir).toISOString().substring(0, 10);
                 }
             },
             {
@@ -62,7 +62,7 @@
             {
                 data: null,
                 render: function (data, type, row, meta) {
-                    return data.tglMasuk;
+                    return new Date(data.tglMasuk).toISOString().substring(0, 10);
                 }
             },
             {
@@ -89,10 +89,6 @@
         ],
         columnDefs: [
 
-            {
-                targets: [3, 8],
-                render: $.fn.dataTable.render.moment('YYYY-MM-DDTHH:mm:ss', 'YYYY/MM/DD')
-            },
             // Center align the header content of column 1
             { className: "dt-head-center", targets: "_all" }
             // Center align the body content of columns 2, 3, & 4
@@ -103,13 +99,13 @@
             {
                 extend: 'pdfHtml5',
                 exportOptions: {
-                    columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                    columns: [0, 1, 2, 3, 4, 6, 7, 8, 9]
                 }
             },
             {
                 extend: 'excelHtml5',
                 exportOptions: {
-                    columns: [0,1,2,3,4,5,6,7,8,9,10]
+                    columns: [0, 1, 2, 3, 4, 6, 7, 8, 9]
                 }
             },
 
